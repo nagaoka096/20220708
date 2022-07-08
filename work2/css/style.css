@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+
+body{
+
+    background-color: #eeeeee;
+
+}
+
+/*タイトル文字調整*/
+.title{
+
+    color: teal;
+    text-align: center;
+    padding: 50px 0px;
+
+}
+
+.wrap {
+
+   max-width: 960px;
+   margin: 0 auto;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+
+}
+
+/*白のボックス*/
+.item {
+ 
+    width: 30%;
+    background: #fff;
+
+}
+
+/*白いボックスの内側に余白*/
+.service{
+
+    padding: 10px;
+
+}
+
+/*写真サイズ調整*/
+img {
+
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+
+}
+
+/*小見出しの調整*/
+.item h3{
+    color: teal;
+    font-size: 20px;
+    border-left: 5px solid teal;
+    margin:  5px 0;
+
+}
+
+/*行間調整*/
+p{
+
+    line-height: 20px;
+}
+
+/*4,cssでスマホ用の記述をする*/
+@media screen and (max-width: 400px) {
+
+    /*　画面サイズ 400px以下になったらここに書いてあるcssが適用される　*/
+    .wrap {
+        display: block;
+        padding: 10px;
+    }
+
+
+    .wrap div {
+        width: 100%;
+    
+    }
+
+}
